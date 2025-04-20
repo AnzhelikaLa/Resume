@@ -1,102 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Mar - Resume</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anzhelika Lashko - Resume</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <div class="container">
-        <!-- Header with Photo -->
-        <div class="header">
+  <div class="container">
+    <!-- Header with Flip Photo -->
+    <div class="header">
+      <div class="flip-container">
+        <div class="flipper">
+          <div class="front">
             <img src="assets/profile.jpg" alt="Profile photo of Anzhelika L.">
-            <div class="header-info">
-                <h1>Anzhelika Lashko</h1>
-                <div class="contact">
-                    <p>Chicago, IL | 646.904.XX11</p>
-                    <button class="email-button" onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=aalashko@gmail.com', '_blank')">Email Me</button>
-
-                    <button class="linkedin-button" onclick="showLinkedIn()">
-                        LinkedIn
-                    </button>
-                </div>
-            </div>
+          </div>
+          <div class="back">
+            <img src="assets/profile-back.png" alt="Alternate profile photo">
+          </div>
         </div>
-
-        <!-- Software QA Engineer Title -->
-        <div class="center-section">
-            <h2>Software QA Engineer</h2>
-            <p class="skills"><strong></strong>SDLC Agile (Scrum) | Jira |Postman | SQL | Java |Selenium WebDriver</p>
+      </div>
+      <div class="header-info">
+        <h1>Anzhelika Lashko</h1>
+        <div class="contact">
+          <p>Chicago, IL | 646.904.1144</p>
+          <button class="email-button" onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=aalashko@gmail.com', '_blank')">Email Me</button>
+          <button class="linkedin-button" onclick="showLinkedIn()">LinkedIn</button>
+          <button class="github-button" onclick="showGitHub()">GitHub</button>
         </div>
-
-        <!-- Professional Summary -->
-        <div class="section">
-            <h2>Professional Summary</h2>
-            <p>Software QA Engineer with 5+ years of experience in manual and automation testing, specializing in web-based and financial applications.</p>
-            <p>Currently focused on testing and automating a social networking web application, ensuring seamless user experience across web platforms. Previously worked in banking treasury, where I tested financial transactions and risk management workflows. Passionate about optimizing test processes, enhancing automation, and delivering high-quality products.</p>
-        </div>       
-
-        <!-- Experience -->
-        <div class="section">
-            <h2>Experience</h2>
-
-            <p class="job-title">Software QA Engineer, ZTR, Consulting Company, Chicago, IL (09/2019 – Present)</p>
-            <p class="project-overview"><strong>Project Overview:</strong> Social networking web application for real-time messaging, media sharing, and event planning.</p>
-            <ul>
-                <li>Developed and implemented comprehensive test strategies covering functional, regression, and end-to-end testing to ensure seamless application performance in an Agile SDLC.</li>
-                <li>Designed and maintained automated UI tests using Selenium WebDriver (Java) & TestNG, improving test execution speed and reducing manual effort by 20%.</li>
-                <li>Validated REST API functionality using Postman, verifying request/response accuracy, authentication, and data consistency across services.</li>
-                <li>Enhanced test case management in TestRail, creating structured test scenarios that improved test coverage for web features by 25%.</li>
-                <li>Led SQL database testing efforts, executing complex queries to validate data accuracy, media storage integrity, and transaction consistency across distributed systems.</li>
-                <li>Improved regression test execution by 30% through test case optimization, ensuring faster feedback loops in CI/CD workflows.</li>
-                <li>Integrated automated test execution with GitHub Actions, enabling seamless CI/CD workflows, reducing deployment errors, and accelerating test feedback cycles.</li>
-                <li>Led exploratory testing initiatives, uncovering usability gaps and potential edge cases before production releases, leading to a smoother user experience.</li>
-                <li>Actively contributed to Agile Scrum teams, collaborating with developers and product managers during sprint planning, backlog refinement, and daily stand-ups.</li>
-                <li>Utilized Jira for defect tracking and Confluence for documentation, maintaining a clear knowledge base for test execution and process improvements.</li>
-            </ul>
-            
-
-            <p class="job-title">Manual Tester | Dealer Interbank Operations, Banking Treasury, FUNHHHHH, Moscow (03/2011 - 04/2017)</p>
-            <p class="project-overview"><strong>Project Overview:</strong> A treasury platform designed for seamless transaction processing across FX, Money Markets, and interbank operations.</p>
-            <ul>
-                <li>Worked primarily as a Dealer in Interbank Operations, handling treasury transactions, deposits, and money market deals.</li>
-                <li>Tested the bank’s internally implemented treasury system, ensuring stability and accuracy before full deployment.</li>
-                <li>Performed manual functional, regression, and UAT testing to verify transaction accuracy and system reliability.</li>
-                <li>Validated deposit and money market transactions processed through Reuters Dealing.</li>
-                <li>Executed SQL database testing to ensure financial data accuracy and compliance.</li>
-                <li>Led system migration testing, ensuring accurate data transfer from the legacy platform to the new treasury system.</li>
-                <li>Collaborated with business analysts & internal stakeholders to ensure regulatory compliance and financial accuracy.</li>
-                <li>Reduced post-deployment defects by 25% by executing structured UAT scenarios.</li>
-                <li>Ensured 100% accurate migration of financial records, preventing transaction discrepancies.</li>
-            </ul>
-            
-        </div>
-        <!-- Skills and Tools -->
-        <div class="section">
-            <h2>Skills and Tools</h2>
-            <p>SDLC | Agile | Jira | Confluence | TestRail | Test planning | RTM | Figma | Selenium WebDriver | Java | HTML | CSS | DevTools|
-                GitHub Actions | Jenkins | CI-CD pipeline | Cucumber | AWS | Unix | SQL | Postman | Swagger | REST API | Newman|
-                Cross-browser testing | Mobile testing | Android Studio | ADB | Regression & UAT testing | System migration testing</p>
-        </div>
-
-        <!-- Education -->
-        <div class="section">
-            <h2>Education & Professional Development</h2>
-            <p><strong>Bachelor’s in Finance</strong>, State Economic University (08/1997 - 05/2000)</p>
-            <p><strong>Associate Degree in Accounting</strong> ,Community College  (09/1991 - 06/1993)</p>
-        </div>
+      </div>
     </div>
 
-    <script>
-        function showEmail() {
-            window.open("https://mail.google.com/mail/?view=cm&fs=1&to=aalashko@gmail.com", "_blank");
-        }
+    <!-- QA Engineer Title -->
+    <div class="center-section">
+      <h2>Software QA Engineer</h2>
+      <p class="skills">SDLC Agile (Scrum) | Jira | Postman | SQL | Java | Selenium WebDriver</p>
+    </div>
+
+    <!-- Professional Summary -->
+    <div class="section">
+      <h2>Professional Summary</h2>
+      <p>Software QA Engineer with 5+ years of experience in manual and automation testing, specializing in financial and communication-based web applications. 
+        Experienced in testing UI, APIs, and databases using tools like Selenium (Java), Postman, SQL, and TestRail. Proven success in system migration testing, 
+        SQL data validation, and improving automation coverage. Background includes testing a banking treasury platform and a real-time social networking app. 
+        Skilled in Agile processes and passionate about delivering reliable, user-friendly software.</p>
+    </div>
     
-        function showLinkedIn() {
-            window.open("https://www.linkedin.com/in/anzhelika-lashko/", "_blank");
-        }
-    </script>
+
+    <!-- Experience -->
+    <div class="section">
+      <h2>Experience</h2>
+
+      <p class="job-title">SOFTWARE QA ENGINEER, ZeroIn, Consulting Company, Chicago, IL (09/2019 – Present)</p>
+      <p class="project-overview"><strong>Project Overview:</strong> Social networking web application for real-time messaging, media sharing, and event planning.</p>
+      <ul>
+        <li>Develop and implement comprehensive test strategies covering functional, regression, and end-to-end testing to ensure seamless application performance in an Agile SDLC</li>
+        <li>Design and maintain automated UI tests using Selenium WebDriver (Java) & TestNG, improving test execution speed and reducing manual effort by 20%</li>
+        <li>Validate REST API functionality using Postman, verifying request/response accuracy, authentication, and data consistency across services.</li>
+        <li>Lead SQL database testing efforts, executing complex queries to validate data accuracy, media storage integrity, and transaction consistency across distributed systems.</li>
+        <li>Boosted regression test execution by 30% through test case optimization, ensuring faster feedback loops in CI/CD workflows.</li>
+        <li>Integrated automated test execution with GitHub Actions, enabling seamless CI/CD workflows, reducing deployment errors, and accelerating test feedback cycles</li>
+        <li>Led exploratory testing initiatives, uncovering usability gaps and potential edge cases before production releases, leading to a smoother user experience</li>
+        <li>Actively contributed to Agile Scrum teams, collaborating with developers and product managers during sprint planning, backlog refinement, and daily stand-ups</li>
+        <li>Utilized Jira for defect tracking and Confluence for documentation, maintaining a clear knowledge base for test execution and process improvements</li>        
+      </ul>
+      <p class="project-overview"><strong>Project Overview:</strong> E-commerce web application project.</p>
+      <ul>
+        <li>Designed and developed a Selenium WebDriver automation framework using Java, TestNG, and Maven to test key e-commerce flows such as login, product search, cart, and checkout.</li>
+        <li>Developed and maintained reusable Page Object Model classes and test scripts to validate UI functionality.</li>
+        <li>Executed regression tests across key e-commerce flows such as login, product search, cart, and checkout.</li>
+        <li>Integrated the project with GitHub for version control and configured GitHub Actions to run tests automatically on commit.</li>
+        <li>Validated data using SQL queries to ensure front-end and back-end consistency.</li>
+      </ul>
+
+      <p class="job-title">MANUAL TESTER | ECONOMIST OF INTERBANK OPERATIONS, BANKING TREASURY, Fundservicebank, Moscow (03/2011 - 04/2017)</p>
+      <p class="project-overview"><strong>Project Overview:</strong> Banking system migration project</p>
+      <ul>
+        <li>Collaborated with cross-functional teams, including developers, business analysts, and financial experts, to define testing requirements and validate system performance.</li>
+        <li>Conducted manual functional, regression, and UAT testing to ensure transaction accuracy and system stability.</li>
+        <li>Led system migration testing, ensuring accurate data transfer and operational continuity.</li>
+        <li>Reduced post-deployment defects by 25% through well-structured UAT testing.</li>
+        <li>Ensured 100% accurate financial data migration, preventing transaction discrepancies and ensuring regulatory compliance.</li>      
+      </ul>
+    </div>
+
+    <!-- Skills and Tools -->
+    <div class="section">
+      <h2>Skills and Tools</h2>
+      <p>SDLC | Agile | Jira | Confluence | TestRail | Test planning | RTM | Figma | Selenium WebDriver | Java |TestNG | HTML | CSS | DevTools |
+        GitHub Actions | Jenkins | CI-CD pipeline | Cucumber | AWS | Unix | SQL | Postman | Swagger | REST API | Newman |Cross-browser testing | Mobile testing | Android Studio | ADB | 
+        Regression & UAT testing | System migration testing |</p>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+      <h2>Education & Professional Development</h2>
+      <p><strong>Bachelor’s in Finance</strong>, State Economic University (08/1997 - 05/2000)</p>
+      <p><strong>Associate Degree in Accounting</strong>, Community College (09/1991 - 06/1993)</p>
+    </div>
+  </div>
+
+  <!-- JS for LinkedIn -->
+  <script>
+    function showLinkedIn() {
+      window.open("https://www.linkedin.com/in/anzhelika-lashko/", "_blank");
+    }
+    function showGitHub() {
+    window.open("https://github.com/AnzhelikaLa", "_blank"); // replace with your GitHub URL if needed
+  }
+  </script>
 </body>
 </html>
 
